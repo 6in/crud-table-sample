@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <style>
+        .table-header-rotated {
+            border-collapse: collapse;
+        }
+        .table-header-rotated td {
+            width: 30px;
+        }
+        .table-header-rotated th {
+            padding: 5px 10px;
+        }
+        .table_name {
+            background: lightblue;
+        }
+        .table-header-rotated td {
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        .table-header-rotated th.rotate {
+            height: 200px;
+            white-space: nowrap;
+        }
+        .table-header-rotated th.rotate > div {
+            transform: translate(25px, 80px) rotate(300deg);
+            width: 40px;
+        }
+        .table-header-rotated th.rotate > div > span {
+            border-bottom: 1px solid #ccc;
+            padding: 5px 10px;
+        }
+        .table-header-rotated th.row-header {
+            padding: 0 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .table-header-rotated tbody tr td table.table-crud {
+            margin: 0px;
+            padding: 0px;
+        }
+        .crud_C {
+            color: white;
+            background: black;
+        }
+        .crud_R {
+            color: white;
+            background: blue;
+        }
+        .crud_U {
+            color: white;
+            background: green;
+        }
+        .crud_D {
+            color: white;
+            background: red;
+        }
+        .row_odd {
+            background: #eee;
+        }
+
+    </style>
+    <body>
+        <table class="table-crud" cellpadding="0" border="0">
+            <tr><td>C</td><td>R</td></tr>
+            <tr><td>U</td><td>Z</td></tr>
+        </table>
+
+        <table class="table table-header-rotated">
+            <thead>
+              <tr>
+                <!-- First column header is not rotated -->
+                <th></th>
+                <!-- Following headers are rotated -->
+                <th class="rotate"><div><span>Column header 1</span></div></th>
+                  <th class="rotate"><div><span>Column header 2</span></div></th>
+                  <th class="rotate"><div><span>Column header 3</span></div></th>
+                  <th class="rotate"><div><span>Column header 4</span></div></th>
+                  <th class="rotate"><div><span>Column header 5</span></div></th>
+                  <th class="rotate"><div><span>Column header 6</span></div></th>
+              </tr> 
+            </thead>
+            <tbody>
+              <tr>
+                <th class="row-header">Row header 1</th>
+                <td>
+                    <table class="table-crud" cellpadding="0" border="0">
+                        <tr><td></td><td>R</td></tr>
+                        <tr><td></td><td>D</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="table-crud" cellpadding="0" border="0">
+                        <tr><td>C</td><td>R</td></tr>
+                        <tr><td>U</td><td></td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="table-crud" cellpadding="0" border="0">
+                        <tr><td>C</td><td>R</td></tr>
+                        <tr><td>U</td><td>D</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="table-crud" cellpadding="0" border="0">
+                        <tr><td>C</td><td></td></tr>
+                        <tr><td>U</td><td>D</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="table-crud" cellpadding="0" border="0">
+                        <tr><td>C</td><td>R</td></tr>
+                        <tr><td>U</td><td>D</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="table-crud" cellpadding="0" border="0">
+                        <tr><td>C</td><td>R</td></tr>
+                        <tr><td>U</td><td>D</td></tr>
+                    </table>
+                </td>
+              </tr>
+
+              <tr>
+                <th class="row-header">Row header 2</th>
+                <td>
+                    <table class="table-crud" cellpadding="0" border="0">
+                        <tr><td>C</td><td>R</td></tr>
+                        <tr><td>U</td><td>D</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="table-crud" cellpadding="0" border="0">
+                        <tr><td>C</td><td>R</td></tr>
+                        <tr><td>U</td><td>D</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="table-crud" cellpadding="0" border="0">
+                        <tr><td>C</td><td>R</td></tr>
+                        <tr><td>U</td><td></td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="table-crud" cellpadding="0" border="0">
+                        <tr><td>C</td><td>R</td></tr>
+                        <tr><td>U</td><td>D</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="table-crud" cellpadding="0" border="0">
+                        <tr><td>C</td><td>R</td></tr>
+                        <tr><td>U</td><td>D</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="table-crud" cellpadding="0" border="0">
+                        <tr><td>C</td><td>R</td></tr>
+                        <tr><td></td><td>D</td></tr>
+                    </table>
+                </td>
+              </tr>
+
+              <tr>
+                <th class="row-header">Row header 3</th>
+                <td>
+                    <table class="table-crud" cellpadding="0" border="0">
+                        <tr><td>C</td><td>R</td></tr>
+                        <tr><td>U</td><td>D</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="table-crud" cellpadding="0" border="0">
+                        <tr><td>C</td><td>R</td></tr>
+                        <tr><td>U</td><td>D</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="table-crud" cellpadding="0" border="0">
+                        <tr><td>C</td><td>R</td></tr>
+                        <tr><td>U</td><td>D</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="table-crud" cellpadding="0" border="0">
+                        <tr><td>C</td><td>R</td></tr>
+                        <tr><td>U</td><td>D</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="table-crud" cellpadding="0" border="0">
+                        <tr><td>C</td><td>R</td></tr>
+                        <tr><td>U</td><td>D</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="table-crud" cellpadding="0" border="0">
+                        <tr><td>C</td><td>R</td></tr>
+                        <tr><td>U</td><td>D</td></tr>
+                    </table>
+                </td>
+              </tr>
+
+              
+            </tbody>
+          </table>
+          <button onclick="onDebugClicked()">debug</button>
+          <div id="result1"></div>
+          <div id="result2"></div>
+    </body>
+    <script src="./crud.js"></script>
+    <script>
+    function onDebugClicked() {
+        document.getElementById("result1").innerHTML = createCrudData(true,crudData)
+        document.getElementById("result2").innerHTML = createCrudData(false,crudData)
+    } 
+    </script>
+</html>
